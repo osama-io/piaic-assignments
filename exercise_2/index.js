@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//exeriise 2
-function ex() {
-    console.log("i m in folder 3");
+function exercise2() {
+    var name = "Eric";
+    var message = "Hello ".concat(name, ", would you like to learn some Python today?");
+    console.log(message);
 }
-exports.default = ex;
+exports.default = exercise2;
