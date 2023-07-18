@@ -2,15 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 function exercise20() {
     // Initial guest list
-    var guestList = ["Albert Einstein", "Leonardo da Vinci", "Rosa Parks"];
+    const guestList = ["Albert Einstein", "Leonardo da Vinci", "Rosa Parks"];
     // Guest who can't make it
-    var guestUnableToAttend = guestList[1];
-    console.log("".concat(guestUnableToAttend, " can't make it to the dinner."));
+    const guestUnableToAttend = guestList[1];
+    console.log(`${guestUnableToAttend} can't make it to the dinner.`);
     // Replace guest who can't make it with a new invitee
     guestList[1] = "Marie Curie";
     // Print invitation messages for the updated guest list
-    guestList.forEach(function (guest) {
-        console.log("Dear ".concat(guest, ", you are cordially invited to dinner. We would be honored to have your presence."));
+    guestList.forEach((guest) => {
+        console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have your presence.`);
     });
     // Inform about the bigger dinner table
     console.log("Good news! We found a bigger dinner table.");
@@ -21,11 +21,11 @@ function exercise20() {
     // Use push() to add one new guest to the end of your list
     guestList.push("Malala Yousafzai");
     // Print invitation messages for the updated guest list
-    guestList.forEach(function (guest) {
-        console.log("Dear ".concat(guest, ", you are cordially invited to dinner. We would be honored to have your presence."));
+    guestList.forEach((guest) => {
+        console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have your presence.`);
     });
     // Number of people invited to dinner
-    var numberOfPeopleInvited = guestList.length;
-    console.log("The number of people invited to dinner is ".concat(numberOfPeopleInvited, "."));
+    const numberOfPeopleInvited = guestList.length;
+    console.log(`The number of people invited to dinner is ${numberOfPeopleInvited}.`);
 }
 exports.default = exercise20;

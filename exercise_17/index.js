@@ -2,15 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 function exercise17() {
     // Initial guest list
-    var guestList = ["Albert Einstein", "Leonardo da Vinci", "Rosa Parks", "Nelson Mandela", "Amelia Earhart", "Marie Curie", "Malala Yousafzai"];
+    const guestList = ["Albert Einstein", "Leonardo da Vinci", "Rosa Parks", "Nelson Mandela", "Amelia Earhart", "Marie Curie", "Malala Yousafzai"];
     // Guest who can't make it
-    var guestUnableToAttend = guestList[1];
-    console.log("".concat(guestUnableToAttend, " can't make it to the dinner."));
+    const guestUnableToAttend = guestList[1];
+    console.log(`${guestUnableToAttend} can't make it to the dinner.`);
     // Replace guest who can't make it with a new invitee
     guestList[1] = "Marie Curie";
     // Print invitation messages for the updated guest list
-    guestList.forEach(function (guest) {
-        console.log("Dear ".concat(guest, ", you are cordially invited to dinner. We would be honored to have your presence."));
+    guestList.forEach((guest) => {
+        console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have your presence.`);
     });
     // Inform about the bigger dinner table
     console.log("Good news! We found a bigger dinner table.");
@@ -21,21 +21,21 @@ function exercise17() {
     // Use push() to add one new guest to the end of your list
     guestList.push("Malala Yousafzai");
     // Print invitation messages for the updated guest list
-    guestList.forEach(function (guest) {
-        console.log("Dear ".concat(guest, ", you are cordially invited to dinner. We would be honored to have your presence."));
+    guestList.forEach((guest) => {
+        console.log(`Dear ${guest}, you are cordially invited to dinner. We would be honored to have your presence.`);
     });
     // Inform that only two people can be invited
     console.log("Oops! The new dinner table won't arrive in time, so we can only invite two people for dinner.");
     // Remove guests until only two names remain
     while (guestList.length > 2) {
-        var removedGuest = guestList.pop();
+        const removedGuest = guestList.pop();
         if (removedGuest) {
-            console.log("Sorry, ".concat(removedGuest, ", we won't be able to invite you to dinner."));
+            console.log(`Sorry, ${removedGuest}, we won't be able to invite you to dinner.`);
         }
     }
     // Print invitation messages for the two remaining guests
-    guestList.forEach(function (guest) {
-        console.log("Dear ".concat(guest, ", you're still invited to dinner. We look forward to seeing you."));
+    guestList.forEach((guest) => {
+        console.log(`Dear ${guest}, you're still invited to dinner. We look forward to seeing you.`);
     });
     // Empty the guest list
     guestList.length = 0;

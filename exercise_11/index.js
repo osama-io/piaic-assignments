@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function exercise11() {
-    var names = ["Alice", "Bob", "Charlie", "David"];
+    const names = ["Alice", "Bob", "Charlie", "David"];
     // Print each character's name
-    names.forEach(function (name) {
+    names.forEach((name) => {
         console.log(name);
     });
 }

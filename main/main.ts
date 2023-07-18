@@ -19,8 +19,33 @@ import exercise9 from "../exercise_9/index";
  import exercise18 from "../exercise_18/index";
  import exercise19 from "../exercise_19/index";
  import exercise20 from "../exercise_20/index";
+ import exercise21 from "../exercise_21/index";
+ import exercise23 from "../exercise_23/index";
+ import exercise24 from "../exercise_24/index";
+ import exercise25 from "../exercise_25/index";
+ import exercise26 from "../exercise_26/index";
+ import exercise27 from "../exercise_27/index";
+ import exercise28 from "../exercise_28/index";
+ import exercise29 from "../exercise_29/index";
+ import exercise30 from "../exercise_30/index";
+ import exercise31 from "../exercise_31/index"; 
+ import exercise32 from "../exercise_32/index";
+ import exercise33 from "../exercise_33/index";
+ import exercise34 from "../exercise_34/index";
+ import exercise35 from "../exercise_35/index";
+ import exercise36 from "../exercise_36/index";
+ import exercise37 from "../exercise_37/index";
+ import exercise38 from "../exercise_38/index";
+ import exercise39 from "../exercise_39/index";
+ import exercise40 from "../exercise_40/index";
+ import exercise41 from "../exercise_41/index";
+ import exercise42 from "../exercise_42/index";
+ import exercise43 from "../exercise_43/index";
+ import exercise44 from "../exercise_44/index";
+ import exercise45 from "../exercise_45/index";
  
  
+
  // Create a readline interface for reading user input
 const rl = readline.createInterface({
   input: process.stdin,
@@ -28,7 +53,7 @@ const rl = readline.createInterface({
 });
 
 function runExercises(): void {
-  rl.question('Enter a number between 1 and 50: ', (answer) => {
+  rl.question('Please Enter a Exercise number between 1 and 45: ', (answer) => {
     const num = parseInt(answer);
 
     if (num >= 1 && num <= 50) {
@@ -84,7 +109,82 @@ function runExercises(): void {
         case 20:
           exercise20();
           break;
-        default:
+        case 21:
+          exercise21();
+          break;
+         
+         case 23:
+          exercise23();
+          break;
+        case 24:
+          exercise24();
+          break;
+        case 25:
+          exercise25();
+          break;
+        case 26:
+          exercise26();
+          break;
+        case 27:
+          exercise27();
+          break;
+        case 28:
+          exercise28();
+          break;
+        case 29:
+          exercise29();
+          break;
+        case 30:
+          exercise30();
+          break;
+        case 31:
+          exercise31();
+          break;
+        case 32:
+          exercise32();
+          break;
+           
+        case 33:
+          exercise33();
+          break;
+        case 34:
+          exercise34();
+          break;
+        case 35:
+          exercise35();
+          break;
+        case 36:
+          exercise36();
+          break;
+        case 37:
+          exercise37();
+          break;
+        case 38:
+          exercise38();
+          break;
+        case 39:
+          exercise39();
+          break;
+        case 40:
+          exercise40();
+        break;
+        case 41:
+          exercise41();
+          break;
+        case 42:
+          exercise42();
+          break;
+        case 43:
+          exercise43();
+          break;
+        case 44:
+          exercise44();
+          break;
+        case 45:
+          exercise45();
+          break;
+ 
+       default:
           console.log("Exercise not done yet.");
           break;
       }

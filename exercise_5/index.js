@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function exercise5() {
-    var famous_person = 'Terry Pratchett';
-    var quote = 'Real stupidity beats artificial intelligence every time.';
-    var message = "".concat(famous_person, " once said, \"").concat(quote, "\"");
+    const famous_person = 'Terry Pratchett';
+    const quote = 'Real stupidity beats artificial intelligence every time.';
+    const message = `${famous_person} once said, "${quote}"`;
     console.log(message);
 }
 exports.default = exercise5;
